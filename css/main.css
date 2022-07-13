@@ -10,14 +10,59 @@ ul {
   padding: 0;
 }
 
-.img {
-  display: block;
+ul {
+  list-style: none;
 }
 
-.list {
-  list-style: none;
+img {
+  display: block;
 }
 
 .link {
   text-decoration: none;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 31px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 31px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 55px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }/*# sourceMappingURL=main.css.map */

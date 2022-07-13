@@ -1,3 +1,28 @@
+body {
+    background-color: $primaryBgc;
+    font-family: $mainFont, sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: $primaryTextColor;
+}
+
 .container {
     margin: 0 auto;
+
+    @include barb(mobile) {
+        width: 480px;
+        padding: 0 31px;
+    }
+
+    @include barb(tablet) {
+        width: 768px;
+        padding: 0 31px;
+    }
+
+    @include barb(desktop) {
+        width: 1280px;
+        padding: 0 55px;
+    }
 }
