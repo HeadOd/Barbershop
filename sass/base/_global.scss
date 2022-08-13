@@ -3,22 +3,21 @@ body {
     font-family: $mainFont, sans-serif;
     font-size: 18px;
     line-height: 1.67;
-    letter-spacing: 0.02em;
+    letter-spacing: .02em;
 
     color: $primaryTextColor;
 }
 
 .container {
     margin: 0 auto;
+    padding: 0 31px;
 
     @include barb(mobile) {
-        width: 480px;
-        padding: 0 31px;
+        width: 480px; 
     }
 
     @include barb(tablet) {
         width: 768px;
-        padding: 0 31px;
     }
 
     @include barb(desktop) {
