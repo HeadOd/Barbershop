@@ -1,0 +1,63 @@
+.barbers {
+  background-color: $secondaryBgc;
+}
+
+.barbers__title {
+  margin-bottom: 44px;
+}
+
+.barbers__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.barbers__img {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.barbers__tumb {
+  text-align: center;
+}
+
+.barbers__name {
+  margin-bottom: 8px;
+}
+
+.barbers__position {
+  margin-bottom: 30px;
+  color: $multicolor;
+}
+
+.barbers__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.barbers__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: $primaryBgc;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.barbers__social-link {
+  color: $primaryTextColor;
+}
+
+.barbers__social-link:hover, .barbers__social-link:focus {
+  color: $multicolor;
+}
+
+.barbers__svg {
+  fill: currentColor;
+}
+

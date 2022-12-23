@@ -52,6 +52,11 @@ body {
   }
 }
 
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -67,16 +72,22 @@ body {
 }
 
 .button {
+  display: block;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
   padding: 12px 20px;
   border: 1px solid #FF6C00;
   border-radius: 25px;
   color: #FFFFFF;
   background-color: transparent;
+}
+.button:hover, .button:focus {
+  color: #FFFFFF;
+  background-color: #FF6C00;
 }
 
 .about__button {
@@ -136,6 +147,65 @@ body {
   color: #FFFFFF;
 }
 
+.footer--bgc {
+  background-color: #191C26;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__form-title {
+  color: #FFFFFF;
+}
+
+.footer__label {
+  position: relative;
+  width: 418px;
+  margin-bottom: 44px;
+}
+
+.footer__input, .footer__textarea {
+  width: 100%;
+  outline: transparent;
+  background-color: transparent;
+  border: none;
+  color: #9DA4BD;
+  border-bottom: 1px solid #9DA4BD;
+}
+.footer__input:hover, .footer__input:focus, .footer__textarea:hover, .footer__textarea:focus {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.footer__input-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  font-weight: 1.36;
+  color: #9DA4BD;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.footer__input:focus + .footer__input-name,
+.footer__textarea:focus + .footer__input-name {
+  color: #FFFFFF;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
 .hero {
   background-size: 480px;
   background-repeat: no-repeat;
@@ -163,11 +233,6 @@ body {
   color: #9DA4BD;
 }
 
-.about {
-  padding-top: 84px;
-  padding-bottom: 87px;
-}
-
 .about__text {
   font-size: 16px;
   line-height: 1.62;
@@ -183,8 +248,6 @@ body {
 }
 
 .price {
-  padding-top: 84px;
-  padding-bottom: 84px;
   background-size: 480px;
   background-position: center;
   background-repeat: no-repeat;
@@ -243,13 +306,9 @@ body {
   margin: 0 auto;
 }
 
-.whywe {
-  padding-top: 81px;
-  padding-bottom: 84px;
-}
-
 .whywe__text {
   color: #555555;
+  margin-bottom: 44px;
 }
 
 .whywe__list {
@@ -264,15 +323,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 193px;
+  height: 133px;
+  padding: 20px 29px;
+  background-color: #F7F7F7;
+}
+
+.whywe__item:nth-child(2n) {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .whywe__upper-text {
+  position: relative;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.37;
 }
 
 .whywe__sup {
+  position: absolute;
+  top: 18px;
+  right: -12px;
   font-weight: 600;
   font-size: 16px;
   color: #FF6C00;
@@ -281,4 +359,78 @@ body {
 .whywe__after-text {
   font-weight: 600;
   font-size: 11px;
+}
+
+.barbers {
+  background-color: #F7F7F7;
+}
+
+.barbers__title {
+  margin-bottom: 44px;
+}
+
+.barbers__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.barbers__img {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.barbers__tumb {
+  text-align: center;
+}
+
+.barbers__name {
+  margin-bottom: 8px;
+}
+
+.barbers__position {
+  margin-bottom: 30px;
+  color: #FF6C00;
+}
+
+.barbers__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.barbers__social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.barbers__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.barbers__social-link {
+  color: #303030;
+}
+
+.barbers__social-link:hover, .barbers__social-link:focus {
+  color: #FF6C00;
+}
+
+.barbers__svg {
+  fill: currentColor;
+}
+
+.gallery__item:not(:last-child) {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

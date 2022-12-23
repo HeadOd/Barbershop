@@ -1,10 +1,6 @@
-.whywe {
-    padding-top: 81px;
-    padding-bottom: 84px;
-}
-
 .whywe__text {
     color: $thirdTextColor;
+    margin-bottom: 44px;
 }
 
 .whywe__list {
@@ -14,16 +10,33 @@
 
 .whywe__item {
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    width: 193px;
+    height: 133px;
+    padding: 20px 29px;
+
+    background-color: $secondaryBgc;
+}
+
+.whywe__item:nth-child(2n) {
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .whywe__upper-text {
+    position: relative;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.37;
 }
 
 .whywe__sup {
+    position: absolute;
+    top: 18px;
+    right: -12px;
     font-weight: 600;
     font-size: 16px;
 

@@ -1,0 +1,53 @@
+.footer--bgc {
+  background-color: $thirdBgc;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__form-title {
+  color: $primaryBgc;
+}
+
+.footer__label {
+  position: relative;
+  width: 418px;
+  margin-bottom: 44px;
+}
+
+.footer__input, .footer__textarea {
+  width: 100%;
+  outline: transparent;
+  background-color: transparent;
+  border: none;
+
+  color: $secondaryTextColor;
+  border-bottom: 1px solid $secondaryTextColor;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $lightTextColor;
+  }
+}
+
+.footer__input-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  font-weight: 1.36;
+
+  color: $secondaryTextColor;
+
+  transform: translateY(10px);
+  transition: transform 400ms ease;
+}
+
+.footer__input:focus + .footer__input-name,
+.footer__textarea:focus + .footer__input-name {
+  color: $lightTextColor;
+  transform: translateY(-15px);
+}

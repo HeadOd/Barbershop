@@ -33,7 +33,7 @@
             </div>
         </section>
 <!-- About -->
-        <section class="about">
+        <section class="about section">
             <div class="about__container container">
                 <p class="about__subtitle subtitle">О НАС</p>
                 <h2 class="about__title title">Лучший Барбершоп<br>
@@ -46,7 +46,7 @@
             </div>
         </section>
 <!-- Price -->
-        <section class="price">
+        <section class="price section">
             <div class="price__container container">
                 <p class="price__subtitle subtitle subtitle--light">Проведи время в компании лучших мастеров</p>
                 <h2 class="price__title title">Услуги и цены</h2>
@@ -64,7 +64,7 @@
             </div>
         </section>
 <!-- Whywe -->
-        <section class="whywe">
+        <section class="whywe section">
             <div class="whywe__container container">
                 <p class="whywe__subtitle subtitle">старая традиционная школа</p>
                 <h2 class="whywe__title title">Почему приходят именно к нам?</h2>
@@ -91,13 +91,13 @@
             </div>
         </section>
 <!-- Barbers -->
-        <section class="barbers">
+        <section class="barbers section">
             <div class="barbers__container container">
-                <p class="barbers__subtitle">для настоящих ценителей атмосферы</p>
-                <h2 class="Наши мастера"></h2>
+                <p class="barbers__subtitle subtitle">для настоящих ценителей атмосферы</p>
+                <h2 class="barbers__title title">Наши мастера</h2>
                 <ul class="barbers__list">
                     <li class="barbers__item">
-                        <picture>
+                        <picture class="barbers__img">
                             <source media="(min-width: 1280px)" 
                             srcset="./images/our_barbers/john_desk.webp 1x,
                                     ./images/our_barbers/john_desk@2x.webp 2x" 
@@ -165,7 +165,7 @@
                     </li>
 
                     <li class="barbers__item">
-                        <picture>
+                        <picture class="barbers__img">
                             <source media="(min-width: 1280px)" 
                             srcset="./images/our_barbers/michele_desk.webp 1x,
                                     ./images/our_barbers/michele_desk@2x.webp 2x" 
@@ -233,7 +233,7 @@
                     </li>
 
                     <li class="barbers__item">
-                        <picture>
+                        <picture class="barbers__img">
                             <source media="(min-width: 1280px)" 
                             srcset="./images/our_barbers/alan_desk.webp 1x,
                                     ./images/our_barbers/alan_desk@2x.webp 2x" 
@@ -304,9 +304,9 @@
         </section>
 
 <!-- Gallery -->
-        <section class="gallery">
+        <section class="gallery section">
             <div class="gallery__container container">
-                <p class="gallery__subtitle">На латинском языке “барба” означает “борода”</p>
+                <p class="gallery__subtitle subtitle">На латинском языке “барба” означает “борода”</p>
                 <ul class="gallery__list">
                     <li class="gallery__item">
                         <picture>
@@ -446,28 +446,32 @@
     </main>
 <!-- Footer -->
     <footer class="footer">
+        <div class="footer--bgc">
+            <div class="footer__container container">
+                <form class="footer__form section">
+                    <h2 class="footer__form-title title">Онлайн-запись</h2>
+    
+                    <label class="footer__label">
+                        <input class="footer__input" type="text" name="" placeholder="">
+                        <span class="footer__input-name">ИМЯ*</span>
+                    </label>
+    
+                    <label class="footer__label">
+                        <input class="footer__input" type="tel" name="" placeholder="">
+                        <span class="footer__input-name">ТЕЛЕФОН*</span>
+                    </label>
+    
+                    <label class="footer__label">
+                        <textarea class="footer__textarea" name="footer-textarea" rows="4" placeholder=""></textarea>
+                        <span class="footer__input-name">СООБЩЕНИЕ</span>
+                    </label>
+    
+                    <button class="footer__button button" type="submit">отправить</button>
+                </form>
+            </div>    
+        </div>
+
         <div class="footer__container container">
-            <form class="footer__form">
-                <h2 class="footer__form-title">Онлайн-запись</h2>
-
-                <label class="footer__label">
-                    <span class="footer__input-name"></span>
-                    <input class="footer__input" type="text" name="" placeholder=" ">
-                </label>
-
-                <label class="footer__label">
-                    <span class="footer__input-name"></span>
-                    <input class="footer__input" type="tel" name="" placeholder=" ">
-                </label>
-
-                <label class="footer__label">
-                    <span class="footer__input-name"></span>
-                    <textarea class="footer__textarea" name="footer-textarea" rows="4" placeholder=" "></textarea>
-                </label>
-
-                <button class="footer__button" type="submit">отправить</button>
-            </form>
-            
             <div class="footer__contacts">
                 <h2 class="footer-contacts__title">Контакты</h2>
                 <div class="footer__adress">
