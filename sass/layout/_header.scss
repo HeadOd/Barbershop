@@ -1,0 +1,63 @@
+.header {
+  position: absolute;
+
+  padding-top: 40px;
+  z-index: 10;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  fill: $primaryBgc;
+}
+
+.header__close {
+  display: none;
+  fill: $thirdBgc;
+}
+
+.header__button {
+  display: none;
+
+  @include barb(mobile-only) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: $primaryBgc;
+    background-color: transparent;
+
+    &.is-open .header__close {
+      display: block;
+    }
+
+    &.is-open .header__menu-burger {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $multicolor;
+    }
+  }
+}
+
+.header__menu-svg {
+    fill: currentColor;
+}
+
+.header__menu {
+  display: none;
+  z-index: 50;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &.is-open {
+    display: block;
+  }
+}

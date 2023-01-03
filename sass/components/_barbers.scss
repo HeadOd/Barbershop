@@ -51,10 +51,11 @@
 
 .barbers__social-link {
   color: $primaryTextColor;
-}
 
-.barbers__social-link:hover, .barbers__social-link:focus {
-  color: $multicolor;
+  &:hover,
+  &:focus {
+    color: $multicolor;
+  }
 }
 
 .barbers__svg {

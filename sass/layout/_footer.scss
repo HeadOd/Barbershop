@@ -10,6 +10,7 @@
 
 .footer__form-title {
   color: $primaryBgc;
+  margin-bottom: 44px;
 }
 
 .footer__label {
@@ -50,4 +51,84 @@
 .footer__textarea:focus + .footer__input-name {
   color: $lightTextColor;
   transform: translateY(-15px);
+}
+
+.footer--bgi {
+  background-size: 480px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../images/background/footer-bgi_mob.png), linear-gradient($thirdBgc, $thirdBgc);
+
+  @include barb(retina) {
+      background-image: url(../../images/background/footer-bgi_mob@2x.png), linear-gradient($thirdBgc, $thirdBgc);
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+}
+
+.footer-contacts__title {
+  color: $primaryBgc;
+  margin-bottom: 40px;
+}
+
+.footer__street, .footer__tel, .footer__mail {
+  display: flex;
+  align-items: center;
+  color: $secondaryTextColor;
+  margin-bottom: 20px;
+}
+
+.footer__mail {
+  margin-bottom: 44px;
+}
+
+.footer__svg {
+  margin-right: 20px;
+  fill: currentColor;
+}
+
+.footer-contacts__subtitle {
+  margin-bottom: 20px;
+
+  color: $lightTextColor;
+
+  &::before {
+    background-color: $subtitleLightColor;
+  }
+}
+
+.footer-contacts__time {
+  color: $secondaryTextColor;
+}
+
+
+// footer__bottom
+.footer__bottom {
+  padding: 44px 0;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__inst {
+  text-transform: none;
+  margin-right: 40px;
+
+  &::before {
+    margin-right: 40px;
+  }
+}
+
+.footer__copyright {
+  color: $secondaryTextColor;
+}
+
+.footer-copyright__svg {
+  fill: $secondaryTextColor;
 }

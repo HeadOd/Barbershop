@@ -21,7 +21,26 @@
 <body>
 <!-- Header -->
     <header class="header">
-        <div class="container"></div>
+        <div class="header__container container">
+            <a href="./index.html">
+                <svg class="logo" width="69" height="55">
+                    <use href="./images/sprite/icons.svg#logo"></use>
+                </svg>
+            </a>
+
+            <button class="header__button" type="button" 
+                data-menu-button aria-expanded="false"
+                aria-controls="header__menu">
+                    <svg class="header__menu-svg" width="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="header__close" href="./images/sprite/icons.svg#close"></use>
+                        <use class="header__menu-burger" href="./images/sprite/icons.svg#menu-burger"></use>
+                    </svg>
+            </button>
+
+            <div class="header__menu" id="header__menu" data-menu>
+                
+            </div>
+        </div>
     </header>
     <main>
 <!-- Hero -->
@@ -135,28 +154,28 @@
                                 <li class="barbers__social-item">
                                     <a href="" class="barbers__social-link link">
                                         <svg class="barbers__svg" width="20" height="20">
-                                        <use href="./images/sprite/icons.svg#instagram"></use>
+                                            <use href="./images/sprite/icons.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="barbers__social-item">
                                     <a href="" class="barbers__social-link link">
                                         <svg class="barbers__svg" width="20" height="20">
-                                        <use href="./images/sprite/icons.svg#twitter"></use>
+                                            <use href="./images/sprite/icons.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="barbers__social-item">
                                     <a href="" class="barbers__social-link link">
                                         <svg class="barbers__svg" width="20" height="20">
-                                        <use href="./images/sprite/icons.svg#facebook"></use>
+                                            <use href="./images/sprite/icons.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="barbers__social-item">
                                     <a href="" class="barbers__social-link link">
                                         <svg class="barbers__svg" width="20" height="20">
-                                        <use href="./images/sprite/icons.svg#linkedin"></use>
+                                            <use href="./images/sprite/icons.svg#linkedin"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -471,41 +490,46 @@
             </div>    
         </div>
 
-        <div class="footer__container container">
-            <div class="footer__contacts">
-                <h2 class="footer-contacts__title">Контакты</h2>
-                <div class="footer__adress">
-                    <a class="footer__street link" href="">
-                        <svg class="footer__svg" width="24" height="24">
-                        <use href="./images/sprite/icons.svg#map-pin"></use>
-                        </svg>
-                        ул. Васильковая, 7А, Киев, 08132
-                    </a>
-
-                    <a class="footer__tel link" href="tel:+38 044 111 11 11">
-                        <svg class="footer__svg" width="24" height="24">
-                        <use href="./images/sprite/icons.svg#phone"></use>
-                        </svg>
-                        +38 044 111 11 11
-                    </a>
-
-                    <a class="footer__mail link" href="mailto:barbershop@email.com">
-                        <svg class="footer__svg" width="24" height="24">
-                            <use href="./images/sprite/icons.svg#mail"></use>
-                        </svg>
-                        barbershop@email.com
-                    </a>
+        <div class="footer--bgi">
+            <div class="footer__container container">
+                <div class="footer__contacts section">
+                    <h2 class="footer-contacts__title title">Контакты</h2>
+                    <div class="footer__adress">
+                        <a class="footer__street link" href="">
+                            <svg class="footer__svg" width="24" height="24">
+                                <use href="./images/sprite/icons.svg#map-pin"></use>
+                            </svg>
+                            ул. Васильковая, 7А, Киев, 08132
+                        </a>
+    
+                        <a class="footer__tel link" href="tel:+38 044 111 11 11">
+                            <svg class="footer__svg" width="24" height="24">
+                                <use href="./images/sprite/icons.svg#phone"></use>
+                            </svg>
+                            +38 044 111 11 11
+                        </a>
+    
+                        <a class="footer__mail link" href="mailto:barbershop@email.com">
+                            <svg class="footer__svg" width="24" height="24">
+                                <use href="./images/sprite/icons.svg#mail"></use>
+                            </svg>
+                            barbershop@email.com
+                        </a>
+                    </div>
+                    <div>
+                        <p class="footer-contacts__subtitle subtitle">время работы</p>
+                        <p class="footer-contacts__time">Ежедневно с 9:00 до 22:00</p>
+                    </div>  
                 </div>
-                <p class="footer-contacts__subtitle">время работы</p>
-                <p class="">Ежедневно с 9:00 до 22:00</p>
             </div>
-
-            <div class="footer__bottom">
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
                 <ul class="footer__list">
-                    <li class="footer__item">Instagram</li>
-                    <li class="footer__item">Youtube</li>
+                    <li class="footer__inst subtitle">Instagram</li>
+                    <li class="footer__youtube subtitle--notbefore">Youtube</li>
                 </ul>
-                <div class="footer__copyright">
+                <div class="footer__copyright subtitle--notbefore">
                     <svg class="footer-copyright__svg" width="12" height="12">
                         <use href="./images/sprite/icons.svg#copyright"></use>
                     </svg>
@@ -514,5 +538,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts-->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
