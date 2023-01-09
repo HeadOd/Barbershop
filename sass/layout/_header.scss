@@ -3,6 +3,7 @@
 
   padding-top: 40px;
   z-index: 10;
+  width: 100vw;
 }
 
 .header__container {
@@ -46,16 +47,25 @@
 }
 
 .header__menu-svg {
+  @include barb(mobile-only) {
+    position: relative;
+    z-index: 100;
     fill: currentColor;
+  }
 }
 
 .header__menu {
   display: none;
   z-index: 50;
 
+  width: 70%;
+  height: 796px;
+
   position: fixed;
   top: 0;
   right: 0;
+
+  background-color: $primaryBgc;
 
   &.is-open {
     display: block;

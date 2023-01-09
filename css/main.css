@@ -23,6 +23,10 @@ img {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: Open Sans, sans-serif;
@@ -159,6 +163,7 @@ body {
   position: absolute;
   padding-top: 40px;
   z-index: 10;
+  width: 100vw;
 }
 
 .header__container {
@@ -202,16 +207,23 @@ body {
   }
 }
 
-.header__menu-svg {
-  fill: currentColor;
+@media screen and (max-width: 767.98px) {
+  .header__menu-svg {
+    position: relative;
+    z-index: 100;
+    fill: currentColor;
+  }
 }
 
 .header__menu {
   display: none;
   z-index: 50;
+  width: 70%;
+  height: 796px;
   position: fixed;
   top: 0;
   right: 0;
+  background-color: #FFFFFF;
 }
 .header__menu.is-open {
   display: block;
