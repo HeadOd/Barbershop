@@ -71,3 +71,63 @@
     display: block;
   }
 }
+
+.header__menu-tumb {
+  padding-left: 40px;
+  padding-top: 118px;
+}
+
+.header__list {
+  margin-bottom: 64px;
+}
+
+.header__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.header__item-list {
+  font-weight: 600;
+  line-height: 1.39;
+  letter-spacing: .1em;
+
+  &:focus,
+  &:hover {
+    color: $multicolor;
+  }
+}
+
+.header__online {
+  margin-bottom: 64px;
+}
+
+.header__tel {
+  margin-bottom: 24px;
+}
+
+.header__social {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.37;
+
+}
+
+.header__social--line{ 
+  margin-bottom: 24px;
+
+  &::before {
+    content: '';
+    display: block;
+
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+
+    background-color: $primaryTextColor;
+}
+}
+.header__social--notline {
+  margin-left: 100px;
+}

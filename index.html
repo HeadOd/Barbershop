@@ -40,21 +40,21 @@
             <div class="header__menu" id="header__menu" data-menu>
                 <div class="header__menu-tumb">
                     <ul class="list header__list">
-                        <li class="header__item"><a href="">О нас</a></li>
-                        <li class="header__item"><a href="">Услуги и цены</a></li>
-                        <li class="header__item"><a href="">Мастера</a></li>
-                        <li class="header__item"><a href="">Контакты</a></li>
+                        <li class="header__item"><a href="#about" class="header__item-list">О нас</a></li>
+                        <li class="header__item"><a href="#price" class="header__item-list">Услуги и цены</a></li>
+                        <li class="header__item"><a href="#barbers" class="header__item-list">Мастера</a></li>
+                        <li class="header__item"><a href="#contacts" class="header__item-list">Контакты</a></li>
                     </ul>
-                    <div>
-                        <a class="header__tel link" href="tel:+380441111111">
+                    <div class="header__online">
+                        <a class="header__tel link header__item-list" href="tel:+380441111111">
                             +38 044 111 11 11</a>
                         <button class="about__button button" type="button">онлайн-запись</button>
                     </div>
-                    <ul class="header__social">
-                        <li class="header__inst">
-                            <a href="">Instagram</a></li>
-                        <li class="header__youtube">
-                            <a href="">Youtube</a></li>
+                    <ul>
+                        <li class="header__social header__social--line">
+                            <a href="" class="header__item-list">Instagram</a></li>
+                        <li class="header__social header__social--notline">
+                            <a href="" class="header__item-list">Youtube</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +70,7 @@
             </div>
         </section>
 <!-- About -->
-        <section class="about section">
+        <section id="about" class="about section">
             <div class="about__container container">
                 <p class="about__subtitle subtitle">О НАС</p>
                 <h2 class="about__title title">Лучший Барбершоп<br>
@@ -83,7 +83,7 @@
             </div>
         </section>
 <!-- Price -->
-        <section class="price section">
+        <section id="price" class="price section">
             <div class="price__container container">
                 <p class="price__subtitle subtitle subtitle--light">Проведи время в компании лучших мастеров</p>
                 <h2 class="price__title title">Услуги и цены</h2>
@@ -128,7 +128,7 @@
             </div>
         </section>
 <!-- Barbers -->
-        <section class="barbers section">
+        <section id="barbers" class="barbers section">
             <div class="barbers__container container">
                 <p class="barbers__subtitle subtitle">для настоящих ценителей атмосферы</p>
                 <h2 class="barbers__title title">Наши мастера</h2>
@@ -508,7 +508,7 @@
             </div>    
         </div>
 
-        <div class="footer--bgi">
+        <div id="contacts" class="footer--bgi">
             <div class="footer__container container">
                 <div class="footer__contacts section">
                     <h2 class="footer-contacts__title title">Контакты</h2>
@@ -559,7 +559,7 @@
         </div>
     </footer>
 
-    <!-- Scripts-->
-    <script src="./js/mobile-menu.js"></script>
+    <!-- Script-->
+    <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>
